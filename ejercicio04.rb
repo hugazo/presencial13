@@ -7,3 +7,7 @@ def mostrar_edad(persona, hash)
   hash.each { |key, value| return value if key == persona }
 end
 puts mostrar_edad('Valentín', personas_edades)
+
+#tambien se puede usar zip
+personas_edades2 = Hash[personas.zip(edades)]
+puts personas_edades2

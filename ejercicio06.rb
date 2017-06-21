@@ -9,9 +9,7 @@ def obtener_mas_barato(menu)
 end
 
 def obtener_promedio_precios(menu)
-  promedio = 0
-  menu.each_value { |value| promedio += value }
-  promedio /= menu.length.to_f
+  menu.values.sum / menu.length.to_f
 end
 
 def obtener_nombres_platos(menu)
